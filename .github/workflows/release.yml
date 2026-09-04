@@ -2,7 +2,7 @@ name: PublishAddon
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: 'jehy/hass-dbstats-addon'
+  IMAGE_NAME: 'mrks115/hass-dbstats-addon'
 
 on:
   release:

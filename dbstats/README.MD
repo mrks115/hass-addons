@@ -21,15 +21,15 @@ Addon will try to autodetect your database options, but if it fails, you can use
 
 ## Installation on HAOS/supervised
 
-Navigate to the [main repository page](https://github.com/jehy/hass-addons/tree/master)
+Navigate to the [main repository page](https://github.com/mrks115/hass-addons/tree/master)
 and push the button to add it to HA, or add it manually:
 
 1. Navigate to addons page on your HA installation
 2. Press three dots in the top right corner
-3. Add repository `https://github.com/jehy/hass-addons` to addon repositories
+3. Add repository `https://github.com/mrks115/hass-addons` to addon repositories
 4. Install addon from addons page
 5. Start addon and visit its page
 
 ## Using without supervisor or HAOS:
 
-You can read about it [here](https://github.com/jehy/hass-dbstats).
+You can read about it [here](https://github.com/mrks115/hass-dbstats).

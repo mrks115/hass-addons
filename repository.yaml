@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: Jehy's Home Assistant add-on repository
-url: 'https://github.com/jehy/hass-addons'
+url: 'https://github.com/mrks115/hass-addons'
 maintainer: Jehy <fate@jehy.ru>
