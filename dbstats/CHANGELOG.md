@@ -1,7 +1,7 @@
 # Changelog
 
-## 1.1.0
- - Bump to hass-dbstats app v1.1.0 (recorder-load stats, caching, refresh buttons, EN/DE UI)
+## 1.1.2
+ - Bump to hass-dbstats app v1.1.2 (recorder-load stats, caching, refresh buttons, EN/DE UI)
  - Fix multi-arch Docker build (arm64 build was crashing)
 
 
