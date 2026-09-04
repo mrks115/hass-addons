@@ -1,19 +1,26 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base-nodejs:0.2.5
+ARG BUILD_FROM=ghcr.io/home-assistant/base:3.24
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
+
+# Make sure bash exists before we switch the default shell to it below
+RUN apk update && apk add --no-cache bash
 
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Install requirements for add-on
-RUN apk update
-RUN  apk add --no-cache  gcc=13.2.1_git20231014-r0
-#RUN  apk add --no-cache              g++=13.2.1_git20231014-r0
-RUN  apk add --no-cache              py3-pip=23.3.1-r0
-RUN  apk add --no-cache              python3=3.11.11-r0
-RUN  apk add --no-cache   sqlite=3.44.2-r0
-RUN  apk add --no-cache  nginx=1.24.0-r16
-RUN  rm -f -r /etc/nginx
+# nodejs/npm come straight from Alpine 3.24's own repos (currently Node
+# 24.x, matching this app's engines requirement), so there's no separate
+# Node base image to track anymore. npm lives in the community repo.
+RUN apk add --no-cache \
+    gcc \
+    py3-pip \
+    python3 \
+    sqlite \
+    nginx \
+    nodejs \
+    npm
+RUN rm -f -r /etc/nginx
 
 # Copy root file system
 COPY rootfs /
