@@ -46,13 +46,13 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Jehy" \
+    maintainer="Markus" \
     org.opencontainers.image.title="${BUILD_NAME}" \
     org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
-    org.opencontainers.image.vendor="Jehy" \
-    org.opencontainers.image.authors="Jehy" \
+    org.opencontainers.image.vendor="Markus" \
+    org.opencontainers.image.authors="Markus" \
     org.opencontainers.image.licenses="MIT" \
-    org.opencontainers.image.url="https://jehy.ru" \
+    org.opencontainers.image.url="https://github.com/mrks115" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
     org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
