@@ -2,7 +2,6 @@ name: DbStats
 version: 0.5.12
 slug: dbstats
 description: Database stats for Home Assistant
-image: ghcr.io/mrks115/dbstats-addon-{arch}
 url: https://github.com/mrks115/hass-addons/blob/master/dbstats/README.MD
 ingress: true
 ingress_port: 6060

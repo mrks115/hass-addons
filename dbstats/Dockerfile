@@ -18,8 +18,8 @@ RUN  rm -f -r /etc/nginx
 # Copy root file system
 COPY rootfs /
 
-COPY --from=ghcr.io/mrks115/hass-dbstats:latest /usr/src/app /usr/src/app
-COPY --from=ghcr.io/mrks115/hass-dbstats:latest /var/www/html /var/www/html
+COPY --from=ghcr.io/mrks115/hass-dbstats:stable /usr/src/app /usr/src/app
+COPY --from=ghcr.io/mrks115/hass-dbstats:stable /var/www/html /var/www/html
 WORKDIR /usr/src/app
 RUN npm ci --omit=dev --no-fund --no-audit && npm cache clean --force ## need to reinstall deps because they can be binary incompatible
 
