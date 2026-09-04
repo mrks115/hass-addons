@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0
+ - Bump to hass-dbstats app v1.1.0 (recorder-load stats, caching, refresh buttons, EN/DE UI)
+ - Fix multi-arch Docker build (arm64 build was crashing)
+
+
 ## 0.5.12
  - Bump base image to 0.3.23 (bumps driver versions)
  - Bump base nodejs image to 0.2.5

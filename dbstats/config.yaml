@@ -1,5 +1,5 @@
 name: DbStats
-version: 0.5.12
+version: 1.1.0
 slug: dbstats
 description: Database stats for Home Assistant
 url: https://github.com/mrks115/hass-addons/blob/master/dbstats/README.MD
