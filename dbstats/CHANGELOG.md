@@ -1,8 +1,10 @@
 # Changelog
 
-## 1.1.2
- - Bump to hass-dbstats app v1.1.2 (recorder-load stats, caching, refresh buttons, EN/DE UI)
+## 1.1.3
+ - Bump to hass-dbstats app v1.1.3 (recorder-load stats, caching, refresh buttons, EN/DE UI)
  - Fix multi-arch Docker build (arm64 build was crashing)
+ - Fix table size chart showing nonsensical values like "1.5k MB" instead of "1.5 GB"
+ - Show a static icon for widgets still queued, instead of every widget spinning at once
 
 
 ## 0.5.12
